@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>personalized webpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <form action="/submit-form">
+<body class="body">
 
-<div class="p-4">
-<label for="fname">Full Name</label>
-<input type="text" id="fname" name="Full Name" placeholder="Enter your full name" required>  
-</div>
+<h1>WE-CONNECT PERSONALIZED WEBPAGE</h1>
+<h2>user information</h2>
 
-<div class="p-4">
-<label class="text-white" for="dob">Date of birth</label><br>
-<input class="w-full py-2 px-3 mb-4 rounded bg-white hover:bg-sky-100 focus:outline-2 focus:outline-offset-2 focus:outline-cyan-500 active:bg-indigo-100" type="date" id="dob" name="Date of birth" placeholder="date of birth" required><br>
+    <form  class="form"  action="/submit-form">
+<div class="form-section">
+         <div class="p-4">
+         <label for="fname"> Enter your full Name</label><br>
+         <input type="text" id="fname" name="Full Name" placeholder="Enter your full name" required> 
+         </div>
+
+         <section class="greeting">
+
+         </section>
+
+         <div class="p-4">
+         <label class="text-white" for="dob"> Select your date of birth</label><br>
+         <input type="date" id="dob" name="Date of birth" placeholder="date of birth" required><br>
+         </div>
 </div>
+         <section class="age-months">
+         </section>
     
 </body>
 </html>

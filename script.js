@@ -25,3 +25,11 @@ dobInput.addEventListener("change", function(){
     `You are approximately ${totalMonths} months old.`;
 
 });
+
+
+for(let i = 1; i <= 5; i++){
+
+    document.getElementById("loop-quotes").innerHTML +=
+    "<p>Believe in yourself!</p>";
+
+}

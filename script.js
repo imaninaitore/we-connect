@@ -1,3 +1,4 @@
+//personalized greeting
 let username = document.getElementById("fname");
 username.addEventListener("input", function(){
     let nameValue = username.value;
@@ -7,6 +8,7 @@ document.getElementById("greeting").innerHTML =
 
 });
 
+//month calculation
 let dobInput = document.getElementById("dob");
 
 dobInput.addEventListener("change", function(){
@@ -26,10 +28,33 @@ dobInput.addEventListener("change", function(){
 
 });
 
-
+//loop
 for(let i = 1; i <= 5; i++){
 
     document.getElementById("loop-quotes").innerHTML +=
     "<p>Believe in yourself!</p>";
 
 }
+
+//local storGE SAVING
+let userAge = document.getElementById("dob");
+
+let saveButton = document.getElementById("submit-save");
+
+
+saveButton.addEventListener("click", function(){
+
+    localStorage.setItem("name", username.value);
+
+    localStorage.setItem("age", userAge.value);
+
+});
+
+
+let savedName = localStorage.getItem("name");
+
+let savedAge = localStorage.getItem("age");
+
+
+document.getElementById("saved-data").innerHTML =
+`Welcome back ${savedName}. You are born in ${savedAge}`;
